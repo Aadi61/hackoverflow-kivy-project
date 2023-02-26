@@ -1,0 +1,84 @@
+WindowManager:
+    MainWindow:
+    SecondWindow:
+<MainWindow>:
+    name:"main"
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:2
+            TextInput:
+                text:"Name:"
+                id:nam
+
+
+                color: 1,1,1,1
+                multiline:False
+            TextInput:
+                text:"Password:"
+                id:passw
+                multiline:False
+        Button:
+            text:"Submit"
+            on_release: app.root.current= "second"
+<SecondWindow>:
+    name:"second"
+    MainWidget:
+#<MainWidget>:
+        Image:
+            pos:0,70
+            size:360,435
+            source:("Delhi.jpg")
+            allow_stretch:True
+            keep_ratio:False
+        Button:
+            background_normal:("Button3Lines.jpg")
+            pos:0,525
+            size:85,80
+            allow_stretch:True
+            keep_ratio:False
+        Image:
+            pos:85,525
+            size:190,80
+            source:("WM.jpeg")
+
+            allow_stretch:True
+            keep_ratio:False
+        Button:
+            pos:260,525
+            size:85,80
+            background_normal:("Search.png")
+            allow_stretch:True
+            keep_ratio:False
+        Button:
+            pos:0,0
+            size:120,90
+            background_normal:("Heart.png")
+            allow_stretch:True
+            keep_ratio:False
+        Button:
+            pos:120,0
+            size:120,90
+            background_normal:("Bell2.png")
+            allow_stretch:True
+            keep_ratio:False
+        Button:
+            pos:240,0
+            size:120,90
+            background_normal:("inf.png")
+            allow_stretch:True
+            keep_ratio:False
+        Image:
+            pos:0,90
+            size:360,150
+            source:("Whats.jpg")
+            allow_stretch:True
+            keep_ratio:False
+        Image:
+            pos:0,445
+            size:360,80
+            source:("chine.jpeg")
+            allow_stretch:True
+            keep_ratio:False
+
+
